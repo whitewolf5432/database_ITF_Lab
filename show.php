@@ -33,6 +33,8 @@ while($Result = mysqli_fecth_array(&res))
 }
 ?>
 </table>
-<?php mysqli_close($conn); ?>
+<?php
+mysqli_close($conn);
+?>
 </body>
 </html>
