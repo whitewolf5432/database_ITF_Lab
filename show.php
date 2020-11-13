@@ -20,14 +20,14 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
         <th width="150"> <div align="center">Link</div></th>
     </tr>
 <?php
-while($result = mysqli_fecth_array(&res))
+while($Result = mysqli_fecth_array(&res))
 {
 ?>
     <tr>
-        <td><?php echo $result['id'];?></td>
-        <td><?php echo $result['name'];?></td>
-        <td><?php echo $result['comment'];?></td>
-        <td><?php echo $result['link'];?></td>
+        <td><?php echo $Result['id'];?></td>
+        <td><?php echo $Result['name'];?></td>
+        <td><?php echo $Result['comment'];?></td>
+        <td><?php echo $Result['link'];?></td>
     </tr>
 <?php
 }
