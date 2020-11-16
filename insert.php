@@ -20,7 +20,7 @@ if (mysqli_query($conn, $sql)) {
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-goto(https://mytestlabitf.azurewebsites.net/index.html)
+goto(https://mytestlabitf.azurewebsites.net/index.html);
      
 mysqli_close($conn);
 ?>
