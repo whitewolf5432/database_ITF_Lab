@@ -3,6 +3,7 @@
 <title>ITF Lab</title>
 </head>
 <body>
+<div align="center">
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'itflabmysqlserver.mysql.database.azure.com', 'nattapat@itflabmysqlserver', 'Gram25452002++', 'labitf', 3306);
@@ -36,6 +37,12 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
-    <a href="index.html"><button><- back</button></a>
+    <br>
+    <div align="right">
+          <a href="index.html"><button><- back</button></a>
+          <div id="button>Edit</div>
+          <div id="button">Remove</div>   
+    </div>
+</div>
 </body>
 </html>
