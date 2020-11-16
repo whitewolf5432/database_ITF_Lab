@@ -36,5 +36,6 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
+    <a href="index.html"><button><- back</button></a>
 </body>
 </html>
