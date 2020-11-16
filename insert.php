@@ -15,6 +15,12 @@ $link = $_POST['link'];
 
 $sql = "INSERT INTO guestbook (name , comment , link) VALUES ('$name', '$comment', '$link')";
 
-
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+goto(https://mytestlabitf.azurewebsites.net/index.html)
+     
 mysqli_close($conn);
 ?>
