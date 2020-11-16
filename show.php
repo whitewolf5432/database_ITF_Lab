@@ -41,6 +41,7 @@ mysqli_close($conn);
       <a href="index.html"><button><- back</button></a>
       <button>Edit</button>
       <button>Remove</button>
+      <button>Reset</button>
     </ul>
 </div>
 </body>
