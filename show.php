@@ -38,11 +38,11 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
     <br>
-    <div align="right">
-          <a href="index.html"><button><- back</button></a>
-          <div id="button>Edit</div>
-          <div id="button">Remove</div>   
-    </div>
+    <ul>
+      <a href="index.html"><button><- back</button></a>
+      <div id="button">Edit</div>
+      <div id="button">Remove</div>
+    </ul>
 </div>
 </body>
 </html>
