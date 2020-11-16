@@ -40,8 +40,8 @@ mysqli_close($conn);
     <br>
     <ul>
       <a href="index.html"><button><- back</button></a>
-      <div id="button">Edit</div>
-      <div id="button">Remove</div>
+      <button>Edit</button>
+      <button>Remove</button>
     </ul>
 </div>
 </body>
