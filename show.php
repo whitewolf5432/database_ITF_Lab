@@ -37,7 +37,6 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
-    <br>
     <ul>
       <a href="index.html"><button><- back</button></a>
       <button>Edit</button>
