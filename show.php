@@ -38,7 +38,7 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
     <br>
-    <ul>
+    <ul align="right">
       <a href="index.html"><button><- back</button></a>
       <button>Edit</button>
       <button>Remove</button>
