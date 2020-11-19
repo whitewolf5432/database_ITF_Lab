@@ -39,8 +39,8 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['comment'];?></td>
             <td><?php echo $Result['link'];?></td>
             <td>
-                <a href="edit.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-warning" >Edit</a>
-                <a href="del.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-danger" onclick="return confirm('Confirm data deletion?')">Delete</a>
+                <a href="edit.php?ID=<?php echo $Result['ID'];?>" class="btn btn-outline-warning" >Edit</a>
+                <a href="del.php?ID=<?php echo $Result['ID'];?>" class="btn btn-outline-danger" onclick="return confirm('Confirm data deletion?')">Delete</a>
                 </tr>
         </tbody>
 <?php
