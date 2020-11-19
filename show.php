@@ -3,7 +3,7 @@
 <title>ITF Lab</title>
 </head>
 <body>
-<div class="card" align="center">
+<div class="card" align="center" style="width: 70%;">
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'mydatabasetotestwebsite.mysql.database.azure.com', 'nattapat@mydatabasetotestwebsite', 'Gram25452002++', 'website', 3306);
