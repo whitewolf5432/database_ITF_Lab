@@ -19,7 +19,7 @@
     ?>
     <div class="container">
     <h2>Edit Form</h2>
-    <form action = "update.php?ID=<?php echo $id; ?>" method = "post" id="CommentForm">
+    <form action = "update.php?ID=<?php echo $id ?>" method = "post" id="CommentForm">
         <label for="Username">Username :</label>
           <input type="text" class="form-control" name = "name" id="idName" value="<?php echo "$row[Name]"; ?>"><br>
           <label for="Username">Comment :</label>
