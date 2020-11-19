@@ -20,11 +20,11 @@
     <h2>Edit Form</h2>
     <form action = "update.php?ID=<?php echo $id ?>" method = "post" id="CommentForm">
         <label for="Username">Username :</label>
-          <input type="text" class="form-control" name = "name" id="idName" value="<?php echo "$row[Name]"; ?>"><br>
+          <input type="text" class="form-control" name = "name" id="idName"><br>
           <label for="Username">Comment :</label>
-          <input type="text" class="form-control" name = "comment" id="idComment" value="<?php echo "$row[Comment]"; ?>"><br>
+          <input type="text" class="form-control" name = "comment" id="idComment"><br>
         <label for="Username">Link :</label>
-          <input type="text" class="form-control" name = "link" id="idLink" value="<?php echo "$row[Link]"; ?>"><br><br>
+          <input type="text" class="form-control" name = "link" id="idLink"><br><br>
           <button class="btn btn-outline-success" id="commentBtn">Submit</button>
       </form>
     </div>
