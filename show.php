@@ -6,13 +6,14 @@
 <div align="center">
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'itflabmysqlserver.mysql.database.azure.com', 'nattapat@itflabmysqlserver', 'Gram25452002++', 'labitf', 3306);
+mysqli_real_connect($conn, 'mydatabasetotestwebsite.mysql.database.azure.com', 'nattapat@mydatabasetotestwebsite', 'Gram25452002++', 'website', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
+<div class="card" align="center">
 <table width="700" border="1">
   <tr>
     <th width="50"> <div align="center">ID</div></th>
@@ -34,6 +35,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
+</div>
 <?php
 mysqli_close($conn);
 ?>
