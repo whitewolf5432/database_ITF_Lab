@@ -48,8 +48,10 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
     </table>
-    <a href="index.html"><button type="button" class="btn btn-outline-info">Add</button></a>
-    <a href="reset.php"><button type="button" class="btn btn-outline-danger" onclick="return confirm('Confirm to reset the data?')">Reset</button></a>
+        <span>
+            <a href="index.html"><button type="button" class="btn btn-outline-info">Add</button></a>&nbsp;&nbsp;
+            <a href="reset.php"><button type="button" class="btn btn-outline-danger" onclick="return confirm('Confirm to reset the data?')">Reset</button></a>
+        </span>
     </div>
 <?php
 mysqli_close($conn);
