@@ -25,7 +25,7 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['id'];?></td>
+    <td><?php echo $Result['ID'];?></td>
     <td><?php echo $Result['name'];?></td>
     <td><?php echo $Result['comment'];?></td>
     <td><?php echo $Result['link'];?></td>
@@ -37,12 +37,14 @@ while($Result = mysqli_fetch_array($res))
 <?php
 mysqli_close($conn);
 ?>
+    <div align="left">
     <ul>
       <a href="index.html"><button><- back</button></a>
       <button>Edit</button>
       <button>Remove</button>
       <button>Reset</button>
     </ul>
+    </div>
 </div>
 </body>
 </html>
