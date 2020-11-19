@@ -11,7 +11,7 @@
 </head>
     <body>
     <?php
-    $id=$_POST['ID'];
+    $id=$_GET['ID'];
     $conn = mysqli_init();
     mysqli_real_connect($conn, 'mydatabasetotestwebsite.mysql.database.azure.com', 'nattapat@mydatabasetotestwebsite', 'Gram25452002++', 'website', 3306);
     $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE ID='$id'");
