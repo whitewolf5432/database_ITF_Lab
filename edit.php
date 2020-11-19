@@ -14,17 +14,19 @@
     $id=$_GET['ID'];
     $conn = mysqli_init();
     mysqli_real_connect($conn, 'mydatabasetotestwebsite.mysql.database.azure.com', 'nattapat@mydatabasetotestwebsite', 'Gram25452002++', 'website', 3306);
+    $res = mysqli_query($conn, "SELECT * FROM guestbook WHERE ID='$id'");
+    $row = mysqli_fetch_array($res)
     mysqli_close($conn);
     ?>
     <div class="container">
     <h2>Edit Form</h2>
-    <form action = "update.php?ID=<?php echo $id ?>" method = "post" id="CommentForm">
+    <form action = "update.php?ID=<?php echo $row['ID'] ?>" method = "post" id="CommentForm">
         <label for="Username">Username :</label>
-          <input type="text" class="form-control" name = "name" id="idName"><br>
+          <input type="text" class="form-control" name = "name" id="idName" value="<?php echo "$row[name]"; ?>"><br>
           <label for="Username">Comment :</label>
-          <input type="text" class="form-control" name = "comment" id="idComment"><br>
+          <input type="text" class="form-control" name = "comment" id="idComment" value="<?php echo "$row[comment]"; ?>"><br>
         <label for="Username">Link :</label>
-          <input type="text" class="form-control" name = "link" id="idLink"><br><br>
+          <input type="text" class="form-control" name = "link" id="idLink" value="<?php echo "$row[link]"; ?>"><br><br>
           <button class="btn btn-outline-success" id="commentBtn">Submit</button>
       </form>
     </div>
