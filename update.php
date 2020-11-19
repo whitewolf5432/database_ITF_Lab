@@ -1,5 +1,5 @@
 <?php
-$id=$_GET['ID'];
+$id=$_POST['ID'];
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'mydatabasetotestwebsite.mysql.database.azure.com', 'nattapat@mydatabasetotestwebsite', 'Gram25452002++', 'website', 3306);
 $name=$_POST['name'];
