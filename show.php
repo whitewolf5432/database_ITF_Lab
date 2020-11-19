@@ -20,6 +20,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <br>
 <div class="container">
+    <div class="card" style="padding: 30px; margin: 25px;">
     <table class = "table table-bordered table-hover" width="1200" align="center" border="1">
         <thead class="thead-dark">
     <tr>
@@ -49,6 +50,7 @@ while($Result = mysqli_fetch_array($res))
     </table>
     <button type="button" class="btn btn-outline-info" onclick ="window.location.href='index.html'">Add</button>
     <a href="reset.php"><button type="button" class="btn btn-outline-danger" onclick="return confirm('Confirm to reset the data?')">Reset</button></a>
+    </div>
 <?php
 mysqli_close($conn);
 ?>
